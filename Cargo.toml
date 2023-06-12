@@ -1,0 +1,18 @@
+[package]
+name = "wizard_clean"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+clap = "3"
+indicatif = "0.17.5"
+rayon = "1.7.0"
+regex = "1.8.1"
+serde_json = "1.0.96"
+
+[profile.release]
+lto = "thin"
+panic = "abort"
